@@ -1,4 +1,4 @@
-package org.pavel.javaCore.methodsAndTypes;
+package org.pavel.javaCore.methodsAndTypes.task1;
 
 import java.util.Scanner;
 
