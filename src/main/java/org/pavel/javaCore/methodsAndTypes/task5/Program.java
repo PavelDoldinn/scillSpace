@@ -6,6 +6,7 @@ public class Program {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final int limitOfNumbers = 5;
+
     public static void main(String[] args) {
 
         //1. Написать метод, принимающий на вход 5ти-значное число и возвращающий 3тю цифру.
@@ -18,6 +19,7 @@ public class Program {
         }
 
     }
+
     public static void getThreeNumber() {
 
         System.out.println("Введите пятизначное число.");
@@ -26,6 +28,7 @@ public class Program {
         checkNumber(inputNumber);
         System.out.println();
     }
+
     private static void checkNumber(int inputNumber) throws RuntimeException {
 
         int count = 0;
@@ -36,7 +39,7 @@ public class Program {
 
             copyInputNumber2 = copyInputNumber2 % 10;
             copyInputNumber1 = copyInputNumber1 / 10;
-            count ++;
+            count++;
         }
         if (count != limitOfNumbers) {
 
@@ -47,7 +50,8 @@ public class Program {
         }
 
     }
-    private static void getNumberCenter (int inputNumber) {
+
+    private static void getNumberCenter(int inputNumber) {
 
         int centerNumber = inputNumber / 100 % 10;
         System.out.println(centerNumber);
