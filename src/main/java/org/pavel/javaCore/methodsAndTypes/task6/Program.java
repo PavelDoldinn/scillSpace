@@ -48,10 +48,11 @@ public class Program {
         //При тестировании координаты вводить с клавиатуры.
         //Подсказка: использовать класс Math и формулу расчета отрезка по координатам двух точек.
 
-        System.out.println(grtLength());
+        System.out.println(getLength());
+
     }
 
-    private static double grtLength() {
+    public static double getLength() {
 
         getConvertInputCoordinates();
 
@@ -78,5 +79,6 @@ public class Program {
         return scanner.nextLine();
 
     }
+
 
 }
