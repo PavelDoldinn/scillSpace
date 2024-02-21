@@ -1,5 +1,7 @@
 package org.pavel.javaCore.methodsAndTypes.task9;
 
+import java.util.Scanner;
+
 public class Program {
 
     public static void main(String[] args) {
@@ -8,11 +10,15 @@ public class Program {
         //Написать метод, который выводит расписание на неделю. Задать на вход в метод порядковый
         //номер дня недели и отобразить на экране то, что запланировано на этот день
 
-        getWeekRoutine(8);
-
+        //getWeekRoutine(8);
+        Scanner scanner = new Scanner(System.in);
+        int numberDay = scanner.nextInt();
+        getWeekRoutine(numberDay);
     }
 
     static void getWeekRoutine(int numberDay) {
+
+        System.out.println("Введите порядковый номер недели.");
 
         switch (numberDay) {
 
