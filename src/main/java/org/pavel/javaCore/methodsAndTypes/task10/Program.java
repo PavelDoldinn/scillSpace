@@ -6,7 +6,7 @@ public class Program {
 
     public static void main(String[] args) {
 
-        amountOfRubles(111);
+        amountOfRubles(21);
     }
 
     static void amountOfRubles(int rubles) {
