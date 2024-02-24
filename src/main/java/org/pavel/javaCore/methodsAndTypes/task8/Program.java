@@ -14,9 +14,9 @@ public class Program {
     static void closeRectangle(int a, int b, int r) {
 
         if (r * r >= (a * a + b * b) / 4){
-            System.out.println("Закроеться.");
+            System.out.println("Закроется.");
         } else {
-            System.out.println("Не закроеться.");
+            System.out.println("Не закроется.");
         }
     }
 }
