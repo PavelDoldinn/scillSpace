@@ -11,9 +11,10 @@ public class Program {
         closeRectangle(5,5,5);
 
     }
-    static void closeRectangle(int a, int b, int r) {
+    static void closeRectangle(int a, int b, double r) {
 
-        if (r * r >= (a * a + b * b) / 4){
+        double gipotenuza = Math.sqrt(Math.pow(a, 2) + Math.pow(b , 2));
+        if (r * 2 >= gipotenuza){
             System.out.println("Закроется.");
         } else {
             System.out.println("Не закроется.");
