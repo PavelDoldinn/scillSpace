@@ -1,17 +1,18 @@
 package org.pavel.javaCore.methodsAndTypes.task18;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Исключить одинаковые элементы массива (каждое значение должно присутствовать в единственном экземпляре)
  */
 public class Program {
+    private static final Random random = new Random();
     public static void main(String[] args) {
 
-        Random random = new Random();
+        removeElement1();
+    }
+    public static void removeElement1() {
+
         int a = random.nextInt(10);
         int[] numbers = new int[a];
 
@@ -25,6 +26,7 @@ public class Program {
             integers.add(i);
         }
         System.out.println(integers);
+
     }
 
 }
