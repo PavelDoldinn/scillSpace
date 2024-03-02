@@ -9,7 +9,22 @@ public class Program {
     private static final Random random = new Random();
     public static void main(String[] args) {
 
-        removeElement1();
+        int[] array = new int[]{1, 5, 1, 5, 3, 3};
+
+        removeElement2(array);
+    }
+    public static void removeElement2(int[] array) {
+
+        int a = 0;
+
+        Arrays.sort(array);
+        for (int i = 0; i < array.length - 1; i++) {
+            if (a == array[i + 1]){
+                System.out.print(a + " ");
+                i++;
+            }
+        }
+
     }
     public static void removeElement1() {
 

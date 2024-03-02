@@ -34,11 +34,15 @@ public class NumeratorAndDenominator {
 
     public void multiplication(double number) {
         double resMultiplication = (double) getX() / getY() * number;
-        System.out.println(resMultiplication);
+        String qwerty = String.valueOf(resMultiplication);
+        String[] str = qwerty.split("\\.");
+        System.out.println(str[0] + " / " + str[1]);
     }
 
     public void division(double number) {
         double resDivision = (double) getX() / getY() / number;
-        System.out.println(resDivision);
+        String qwerty = String.valueOf(resDivision);
+        String[] str = qwerty.split("\\.");
+        System.out.println(str[0] + " / " + str[1]);
     }
 }
