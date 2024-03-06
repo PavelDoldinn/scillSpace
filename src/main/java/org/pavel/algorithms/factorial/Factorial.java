@@ -7,5 +7,4 @@ public class Factorial {
         GetFactorial factorial = new GetFactorial();
         System.out.println(factorial.getFactorial());
     }
-
 }
