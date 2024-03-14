@@ -1,5 +1,7 @@
 package org.pavel.algorithms.primeNumbers;
 
+import java.util.Scanner;
+
 /**
  * Выведет все простые числа от 0 до n
  */

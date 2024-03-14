@@ -6,6 +6,8 @@ public class Program {
 
         GetPrimeNumbers getPrimeNumbers = new GetPrimeNumbers();
         getPrimeNumbers.getPrimeNumbers(1000);
+
+
     }
 
 }

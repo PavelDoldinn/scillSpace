@@ -1,6 +1,8 @@
 package org.pavel.javaCore.methodsAndTypes.task20;
 
-import java.util.Arrays;
+import java.util.*;
+
+import static java.lang.System.in;
 
 /**
  * Массивы
@@ -13,22 +15,48 @@ import java.util.Arrays;
  * Пример:
  * Изначальный массив: [5, 3, -10, 4, -4, 80, 20]
  * После удаления локальных максимумов: [3, -10, -4, 20]
- * TODO
  */
 public class Program {
-
+    private static final Scanner scanner = new Scanner(System.in);
+    private static Random random = new Random();
     public static void main(String[] args) {
 
-        int[] nums = new int[]{5, 3, -10, 4, -4, 80, 20};
-        getNums(nums);
+        System.out.println("Введите размер массива: ");
+        int n = scanner.nextInt(21);
+        int[] nums = new int[n];
+
+        System.out.println(getNums(nums));
     }
-    static void getNums(int[] nums){
-        for (int i = 1; i < nums.length - 1; i++) {
-            if (nums[i] > nums[i - 1] && nums[i] > nums[i + 1]){
-                System.out.println(nums[i]);
+
+    static List<Integer> getNums (int[] nums){
+
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = random.nextInt(21);
+        }
+        System.out.println(Arrays.toString(nums));
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (i == 0) {
+                if (nums[i] > nums[i +1]){
+                    list.add(nums[i + 1]);
+                } else {
+                    list.add(nums[i]);
+                }
+            } else if (i == nums.length - 1) {
+                if (nums[nums.length - 1] > nums[i - 1]){
+                    list.add(nums[i - 1]);
+                } {
+                    list.add(nums[nums.length - 1]);
+                }
+            } else if(nums[i] > nums[i + 1] && nums[i] > nums[i - 1]) {
+                list.add(nums[i - 1]);
             }
         }
-
+        return list;
     }
-
 }
+
+
+
+
+
