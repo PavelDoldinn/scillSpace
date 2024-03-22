@@ -16,7 +16,7 @@ public class Program {
         System.out.println(atm);
         System.out.println(atm.getSumBanknote());
         System.out.println(atm.getWithdrawCash());
-        System.out.println(atm.setDepositCash());
+        //System.out.println(atm.setDepositCash());
 
 
     }
