@@ -20,14 +20,15 @@ public class Program {
         String s1 = "Java";
         char c = 'a';
 
-        System.out.println(s.charAt(s.length() - 1));
-        System.out.println(s.endsWith("!!!"));
-        System.out.println(s.startsWith("I like"));
-        System.out.println(s.contains("Java"));
+        //System.out.println(s.charAt(s.length() - 1));
+        //System.out.println(s.endsWith("!!!"));
+        //System.out.println(s.startsWith("I like"));
+        //System.out.println(s.contains("Java"));
         indexS(s, s1);
-        System.out.println(characterReplacement(s, c));
-        System.out.println(s.toUpperCase());
-        System.out.println(s.substring(0, 6) + " " + s.substring(11));
+        System.out.println(s.indexOf("Java"));
+        //System.out.println(characterReplacement(s, c));
+        //System.out.println(s.toUpperCase());
+        //System.out.println(s.substring(0, 6) + " " + s.substring(11));
     }
 
     public static char[] characterReplacement(String s, char c) {
